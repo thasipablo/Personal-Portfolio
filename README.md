@@ -88,7 +88,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:thasipablo/Hello-Microverse.git
+  git clone git@github.com:thasipablo/Personal-Portfolio.git
 ```
 
 ### Run tests
