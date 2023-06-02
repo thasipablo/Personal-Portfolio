@@ -13,8 +13,10 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primary-color);
+  font-family: "Inter", sans-serif;
 }
 
+/* navbar */
 .navbar-container {
   display: flex;
   justify-content: end;
@@ -29,4 +31,18 @@ body {
 .mobile-menu img {
   height: 24px;
   width: 24px;
+}
+/* -- end navbar */
+
+/* Hero section */
+.hero-banner {
+  text-align: center;
+}
+.hero-banner__title {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+}
+.hero-banner__title span {
+  color: var(--highlight-color);
 }
