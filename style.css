@@ -3,10 +3,12 @@
   --secondary-color: #3a4a42;
   --highlight-color: #36b37f;
   --neutral-color: #dfe1e6;
+  --neutral-color-200: #d0d9d4;
 }
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,8 +29,20 @@ button {
   background: transparent;
 }
 
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .section-container {
   padding: 1.25rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* navbar */
@@ -68,12 +82,6 @@ button {
   background-position: center;
 }
 
-.hero-banner__title {
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-  font-weight: 700;
-}
-
 .hero-banner__title span {
   color: var(--highlight-color);
 }
@@ -84,12 +92,10 @@ button {
 }
 
 .socials {
-  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  padding-left: 0;
 }
 
 .socials-item {
@@ -104,7 +110,7 @@ button {
 }
 
 .banner-scroll-btn {
-  margin-top: 80px;
+  margin: 80px 0 40px 0;
 }
 
 .banner-scroll-btn button {
@@ -122,4 +128,74 @@ button {
 
 .banner-scroll-btn button img {
   padding-top: 2px;
+}
+
+/* end hero section */
+
+/* work section */
+.works-section-title {
+  margin-top: 0;
+}
+
+.cards-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--neutral-color);
+  border: 1px solid var(--neutral-color-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.work-card__head {
+  height: 200px;
+}
+
+.work-card__body {
+  color: var(--secondary-color);
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.card-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-btn {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 8px 12px;
+  background: var(--neutral-color-200);
+  display: flex;
+  align-items: center;
+}
+
+.card-cta {
+  text-align: center;
+}
+
+.card-cta a{
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px;
+  text-align: center;
+  margin: 24px auto;
+  border-radius: 4px;
+  background: var(--highlight-color);
 }
