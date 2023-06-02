@@ -3,7 +3,7 @@
   --secondary-color: #3a4a42;
   --highlight-color: #36b37f;
 
-  --neutral-color: #DFE1E6;
+  --neutral-color: #dfe1e6;
 }
 
 * {
@@ -32,6 +32,15 @@ button {
   padding: 1.25rem;
 }
 
+/* navbar */
+.header {
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.navbar{
+  height: 48px;
+}
+
 .navbar-container {
   display: flex;
   justify-content: end;
@@ -45,7 +54,6 @@ button {
   height: 24px;
   width: 24px;
 }
-
 /* -- end navbar */
 
 /* Hero section */
@@ -98,8 +106,7 @@ button {
   margin-top: 80px;
 }
 
-.banner-scroll-btn
-.banner-scroll-btn button {
+.banner-scroll-btn .banner-scroll-btn button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,4 +122,3 @@ button {
 .banner-scroll-btn button img {
   padding-top: 2px;
 }
-
