@@ -189,7 +189,7 @@ ul {
   text-align: center;
 }
 
-.card-cta a{
+.card-cta a {
   display: inline-block;
   color: #fff;
   font-size: 1rem;
@@ -198,4 +198,16 @@ ul {
   margin: 24px auto;
   border-radius: 4px;
   background: var(--highlight-color);
+}
+
+/* end work section */
+
+/* about me section */
+.about-me-sub-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
 }
