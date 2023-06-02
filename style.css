@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -19,22 +15,28 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
 .section-container {
   padding: 1.25rem;
 }
 
-/* navbar */
 .navbar-container {
   display: flex;
   justify-content: end;
 }
 
 .mobile-menu {
-  border: 0;
-  outline: 0;
   padding: 8px;
-  cursor: pointer;
-  background: transparent;
 }
 
 .mobile-menu img {
@@ -47,6 +49,13 @@ body {
 /* Hero section */
 .hero-banner {
   text-align: center;
+}
+
+.hero-banner-container {
+  background-image: url("images/header_illus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-banner__title {
@@ -63,3 +72,27 @@ body {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+
+.socials {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.socials-item {
+  height: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-item img {
+  width: fit-content;
+}
+
+.banner-scroll-btn button {
+  border: 1px solid ;
+}
+
