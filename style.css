@@ -66,6 +66,8 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-banner__title {
