@@ -15,6 +15,9 @@ body {
   color: var(--primary-color);
   font-family: "Inter", sans-serif;
 }
+.section-container {
+  padding: 1.25rem;
+}
 
 /* navbar */
 .navbar-container {
@@ -45,4 +48,8 @@ body {
 }
 .hero-banner__title span {
   color: var(--highlight-color);
+}
+.hero-banner__info {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
