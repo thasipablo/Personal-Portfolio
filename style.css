@@ -350,3 +350,12 @@ textarea::placeholder {
 .form-submit-btn {
   display: block;
 }
+
+/* end contact section */
+
+/* footer */
+footer .email {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
