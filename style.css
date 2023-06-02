@@ -2,6 +2,8 @@
   --primary-color: #172b4d;
   --secondary-color: #3a4a42;
   --highlight-color: #36b37f;
+
+  --neutral-color: #DFE1E6;
 }
 
 * {
@@ -92,7 +94,25 @@ button {
   width: fit-content;
 }
 
+.banner-scroll-btn {
+  margin-top: 80px;
+}
+
+.banner-scroll-btn
 .banner-scroll-btn button {
-  border: 1px solid ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-scroll-btn button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--neutral-color);
+  border-radius: 100px;
+}
+
+.banner-scroll-btn button img {
+  padding-top: 2px;
 }
 
