@@ -138,6 +138,6 @@ I would like to thank all my code partners, and all reviewers
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](./LICENSE.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
