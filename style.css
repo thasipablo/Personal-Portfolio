@@ -237,7 +237,7 @@ textarea::placeholder {
 /* end work section */
 
 /* about me section */
-.about-me-header{
+.about-me-header {
   position: relative;
 }
 
@@ -317,7 +317,7 @@ textarea::placeholder {
 .about-me-header .illus-2 {
   position: absolute;
   bottom: 48px;
-  left:0;
+  left: 0;
 }
 
 /* end about section */
@@ -325,7 +325,6 @@ textarea::placeholder {
 /* contact section */
 .contact-section {
   position: relative;
-
 }
 
 .contact-section .illus-1 {
