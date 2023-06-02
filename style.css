@@ -3,18 +3,22 @@
   --secondary-color: #3a4a42;
   --highlight-color: #36b37f;
 }
+
 * {
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
   margin: 0;
   padding: 0;
   color: var(--primary-color);
   font-family: "Inter", sans-serif;
 }
+
 .section-container {
   padding: 1.25rem;
 }
@@ -24,6 +28,7 @@ body {
   display: flex;
   justify-content: end;
 }
+
 .mobile-menu {
   border: 0;
   outline: 0;
@@ -31,24 +36,29 @@ body {
   cursor: pointer;
   background: transparent;
 }
+
 .mobile-menu img {
   height: 24px;
   width: 24px;
 }
+
 /* -- end navbar */
 
 /* Hero section */
 .hero-banner {
   text-align: center;
 }
+
 .hero-banner__title {
   font-size: 2.5rem;
   line-height: 3.25rem;
   font-weight: 700;
 }
+
 .hero-banner__title span {
   color: var(--highlight-color);
 }
+
 .hero-banner__info {
   font-size: 1.25rem;
   line-height: 1.75rem;
