@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #172b4d;
+  --secondary-color: #3a4a42;
+  --highlight-color: #36b37f;
+  --neutral-color: #dfe1e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.section-container {
+  padding: 1.25rem;
+}
+
+/* navbar */
+.header {
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.navbar {
+  height: 48px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: end;
+}
+
+.mobile-menu {
+  padding: 8px;
+}
+
+.mobile-menu img {
+  height: 24px;
+  width: 24px;
+}
+
+/* -- end navbar */
+
+/* Hero section */
+.hero-banner {
+  text-align: center;
+}
+
+.hero-banner-container {
+  background-image: url("images/header_illus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-banner__title {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  font-weight: 700;
+}
+
+.hero-banner__title span {
+  color: var(--highlight-color);
+}
+
+.hero-banner__info {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.socials {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding-left: 0;
+}
+
+.socials-item {
+  height: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-item img {
+  width: fit-content;
+}
+
+.banner-scroll-btn {
+  margin-top: 80px;
+}
+
+.banner-scroll-btn button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--neutral-color);
+  border-radius: 100px;
+}
+
+.banner-scroll-btn .banner-scroll-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-scroll-btn button img {
+  padding-top: 2px;
+}

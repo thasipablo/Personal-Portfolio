@@ -41,12 +41,13 @@ After you're finished please remove all the comments and instructions!
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Personal Portfolio <a name="about-project"></a>
 
-**Personal Portfolio** is an online personal portfolio project designed to open up your professional skills and work to the world.
+**Personal Portfolio** is an online personal portfolio project designed to open up professional skills and work to the world.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -132,5 +133,11 @@ If you like this project fork it and make a PR, open an issue or invite me drink
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank all my code partners, and all reviewers
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
