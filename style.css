@@ -3,7 +3,8 @@
   --secondary-color: #3a4a42;
   --highlight-color: #36b37f;
   --neutral-color: #dfe1e6;
-  --neutral-color-200: #d0d9d4;
+  --neutral-color-50: #C1C7D0;
+  --secondary-color-50: #d0d9d4;
 }
 
 * {
@@ -147,7 +148,7 @@ ul {
   display: flex;
   flex-direction: column;
   background: var(--neutral-color);
-  border: 1px solid var(--neutral-color-200);
+  border: 1px solid var(--secondary-color-50);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -180,16 +181,17 @@ ul {
   font-size: 0.75rem;
   line-height: 1rem;
   padding: 8px 12px;
-  background: var(--neutral-color-200);
+  background: var(--secondary-color-50);
+  border-radius: 4px;
   display: flex;
   align-items: center;
 }
 
-.card-cta {
+.cta-btn {
   text-align: center;
 }
 
-.card-cta a {
+.cta-btn a {
   display: inline-block;
   color: #fff;
   font-size: 1rem;
@@ -203,6 +205,12 @@ ul {
 /* end work section */
 
 /* about me section */
+.about-me-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
 .about-me-sub-title {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -210,4 +218,53 @@ ul {
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.about-me-cards-container{
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+}
+
+.about-me-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color-50);
+  border: 1px solid var(--neutral-color-50);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.about-me-card__icon {
+  background: #fff;
+  margin: 24px 0;
+  padding: 18px;
+  width: 80px;
+  height: 80px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 16px 24px var(--neutral-color);
+}
+
+.about-me-card__tech-stack{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-me-card__tech-stack li{
+  color: var(--highlight-color);
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
 }
