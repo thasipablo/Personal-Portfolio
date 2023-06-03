@@ -169,6 +169,15 @@ textarea::placeholder {
   margin-top: 0;
 }
 
+.works-section-title::after {
+  content: "";
+  display: block;
+  margin: 24px auto 62px auto;
+  height: 4px;
+  width: 40px;
+  background: var(--highlight-color);
+}
+
 .cards-container {
   display: grid;
   gap: 24px;
