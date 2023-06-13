@@ -215,10 +215,10 @@
           <h1 class="section-title">
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </h1>
-          <form>
-            <input type="text" placeholder="Full name">
-            <input type="email" placeholder="Email address">
-            <textarea cols="30" rows="10" placeholder="Hey I’d like to connect to..."></textarea>
+          <form method="POST" action="https://formspree.io/f/xoqzgjwv">
+            <input type="text" placeholder="Full name" name="name" maxlength="30">
+            <input type="email" placeholder="Email address" name="email">
+            <textarea cols="30" rows="10" name="message" placeholder="Hey I’d like to connect to..."></textarea>
             <button type="submit" class="form-submit-btn">Get in touch</button>
           </form>
         </div>
