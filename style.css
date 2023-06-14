@@ -326,3 +326,41 @@ textarea::placeholder {
 }
 
 /* end about section */
+
+/* contact section */
+.contact-section {
+  position: relative;
+}
+
+.contact-section .illus-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contact-section form {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section form textarea {
+  text-align: left;
+  height: 114px;
+}
+
+.form-submit-btn {
+  display: block;
+}
+
+/* end contact section */
+
+/* footer */
+footer .email {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-top: 0;
+}

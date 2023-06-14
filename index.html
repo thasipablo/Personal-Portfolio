@@ -74,7 +74,7 @@
 
     <main>
       <!-- Work section -->
-      <section class="section-container">
+      <section id="works" class="section-container">
         <h2 class="works-section-title section-title">My Recent Works</h2>
         <div class="cards-container">
           <article class="work-card">
@@ -160,7 +160,7 @@
   
       <!-- About me -->
       <section>
-        <section class="about-me-header">
+        <section id="about-me" class="about-me-header">
           <div class="about-me-header-container">
             <h2 class="section-title about-me-title">About me</h2>
             <p class="about-me-sub-title"> 
@@ -208,5 +208,52 @@
           </div>
         </section>
       </section>
+
+      <!-- contact -->
+      <section id="contact" class="contact-section">
+        <div class="section-container">
+          <h1 class="section-title">
+            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+          </h1>
+          <form method="POST" action="https://formspree.io/f/xoqzgjwv">
+            <input type="text" placeholder="Full name" name="name" maxlength="30" required>
+            <input type="email" placeholder="Email address" name="email" required>
+            <textarea cols="30" rows="10" maxlength="500" name="message" placeholder="Hey I’d like to connect to..." required></textarea>
+            <button type="submit" class="form-submit-btn">Get in touch</button>
+          </form>
+        </div>
+        <img class="illus-1" src="images/illustration-contact-form.png" alt="illustration">
+      </section>
+    </main>
+    <footer>
+      <p class="email">thasipablo@gmail.com</p>
+      <ul class="socials">
+        <li class="socials-item">
+          <a href="https://twitter.com/thasipablo_"
+            ><img src="images/twitter.svg" alt="twitter icon"
+          /></a>
+        </li>
+        <li class="socials-item">
+          <a href="https://linkedin.com/in/thasipablo"
+            ><img src="images/linkedin.svg" alt="linkedin icon"
+          /></a>
+        </li>
+        <li class="socials-item">
+          <a href="https://medium.com/@thasipablo"
+            ><img src="images/medium.svg" alt="medium icon"
+          /></a>
+        </li>
+        <li class="socials-item">
+          <a href="https://github.com/thasipablo"
+            ><img src="images/github.svg" alt="github icon"
+          /></a>
+        </li>
+        <li class="socials-item">
+          <a href="#"
+            ><img src="images/angellist.svg" alt="angellist icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
