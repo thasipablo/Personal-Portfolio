@@ -66,6 +66,8 @@ textarea::placeholder {
 
 .section-container {
   padding: 1.25rem;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -78,6 +80,10 @@ textarea::placeholder {
 /* navbar */
 .header {
   padding: 1.25rem 1.25rem 0 1.25rem;
+  background-image: url("images/header_illus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navbar {
@@ -98,6 +104,16 @@ textarea::placeholder {
   width: 24px;
 }
 
+.navbar-links {
+  display: none;
+}
+
+.navbar-link-item {
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 /* -- end navbar */
 
 /* Hero section */
@@ -106,16 +122,18 @@ textarea::placeholder {
 }
 
 .hero-banner-container {
-  background-image: url("images/header_illus.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   flex-direction: column;
 }
 
-.hero-banner__title span {
+.hero-banner__title .my-position {
   color: var(--highlight-color);
+}
+
+.hero-banner__title .my-name {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-banner__info {
@@ -266,12 +284,14 @@ textarea::placeholder {
 
 .about-me-cards-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 24px;
 }
 
 .about-me-card {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -363,4 +383,54 @@ footer .email {
   font-size: 1.25rem;
   line-height: 2rem;
   margin-top: 0;
+}
+
+/* media queries */
+
+@media screen and (min-width: 768px) {
+  /* header */
+  .navbar {
+    margin-bottom: 160px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar-container {
+    justify-content: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  /* hero section */
+  .hero-banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.75rem;
+    letter-spacing: 0.37px;
+    margin-top: 0;
+  }
+
+  .hero-banner__title .my-name {
+    display: inline;
+  }
+
+  .hero-banner__title .my-position {
+    display: block;
+  }
+
+  /* work section */
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* about me section */
+  .about-me-cards-container {
+    flex-direction: row;
+  }
 }
