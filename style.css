@@ -77,13 +77,6 @@ textarea::placeholder {
   text-align: center;
 }
 
-.cta-btn a:hover,
-.form-submit-btn:hover {
-  opacity: 0.8;
-  transform: scale(1.025);
-  box-shadow: 4px 4px 8px var(--neutral-color);
-}
-
 .illus-desktop {
   display: none;
 }
@@ -281,6 +274,12 @@ textarea::placeholder {
   background: var(--highlight-color);
 }
 
+.cta-btn a:hover {
+  opacity: 0.8;
+  transform: scale(1.025);
+  box-shadow: 4px 4px 8px var(--neutral-color);
+}
+
 /* end work section */
 
 /* about me section */
@@ -393,6 +392,12 @@ textarea::placeholder {
 
 .form-submit-btn {
   display: block;
+}
+
+.form-submit-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.025);
+  box-shadow: 4px 4px 8px var(--neutral-color);
 }
 
 /* end contact section */
