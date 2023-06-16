@@ -84,6 +84,10 @@ textarea::placeholder {
   box-shadow: 4px 4px 8px var(--neutral-color);
 }
 
+.illus-desktop {
+  display: none;
+}
+
 /* navbar */
 .header {
   padding: 1.25rem 1.25rem 0 1.25rem;
@@ -469,5 +473,32 @@ footer .email {
 
   .form-submit-btn {
     margin: 0;
+  }
+
+  .illus-mobile {
+    display: none;
+  }
+
+  .illus-desktop {
+    z-index: -10;
+    position: absolute;
+    display: inline-block;
+  }
+
+  .illus-desktop.illus-1 {
+    width: 120px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .illus-desktop.illus-2 {
+    bottom: 40px;
+    left: 180px;
+  }
+
+  .illus-desktop.illus-3 {
+    width: 120px;
+    bottom: 0;
+    right: 0;
   }
 }
