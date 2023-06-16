@@ -77,6 +77,13 @@ textarea::placeholder {
   text-align: center;
 }
 
+.cta-btn a:hover,
+.form-submit-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.025);
+  box-shadow: 4px 4px 8px var(--neutral-color);
+}
+
 /* navbar */
 .header {
   padding: 1.25rem 1.25rem 0 1.25rem;
@@ -112,6 +119,13 @@ textarea::placeholder {
   padding: 10px 12px;
   font-weight: 600;
   font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.navbar-link-item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: var(--highlight-color);
 }
 
 /* -- end navbar */
@@ -247,6 +261,8 @@ textarea::placeholder {
 
 .cta-btn {
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .cta-btn a,
