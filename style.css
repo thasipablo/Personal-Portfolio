@@ -112,6 +112,12 @@ textarea::placeholder {
   padding: 10px 12px;
   font-weight: 600;
   font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.navbar-link-item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 /* -- end navbar */
