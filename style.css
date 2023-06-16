@@ -293,7 +293,7 @@ textarea::placeholder {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   background: var(--secondary-color-50);
   border: 1px solid var(--neutral-color-50);
