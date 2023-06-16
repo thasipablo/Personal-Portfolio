@@ -440,6 +440,10 @@ footer .email {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .contact-section-wrapper form {
+    align-items: start;
+  }
+
   .contact-section-title {
     font-size: 30px;
     font-weight: 700;
@@ -448,6 +452,6 @@ footer .email {
   }
 
   .form-submit-btn {
-    display: inline-block;
+    margin: 0;
   }
 }
