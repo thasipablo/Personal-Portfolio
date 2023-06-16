@@ -433,4 +433,21 @@ footer .email {
   .about-me-cards-container {
     flex-direction: row;
   }
+
+  /* contact section */
+  .contact-section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-section-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  .form-submit-btn {
+    display: inline-block;
+  }
 }
