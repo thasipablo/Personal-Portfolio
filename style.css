@@ -506,4 +506,14 @@ footer .email {
     bottom: 0;
     right: 0;
   }
+
+  /* footer section */
+  footer {
+    margin-top: 12px;
+    border-top: 1px solid var(--neutral-color);
+  }
+
+  footer .email {
+    display: none;
+  }
 }
