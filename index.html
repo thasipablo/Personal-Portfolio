@@ -223,8 +223,10 @@
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </h1>
           <form method="POST" action="https://formspree.io/f/xoqzgjwv">
-            <input type="text" placeholder="Full name" name="name" maxlength="30" required>
-            <input type="email" placeholder="Email address" name="email" required>
+            <label for="full-name" hidden>Full Name</label>
+            <input id="full-name" type="text" placeholder="Full name" name="name" maxlength="30" required>
+            <label for="email" hidden>Email</label>
+            <input id="email" type="email" placeholder="Email address" name="email" required>
             <textarea cols="30" rows="10" maxlength="500" name="message" placeholder="Hey I’d like to connect to..." required></textarea>
             <button type="submit" class="form-submit-btn">Get in touch</button>
           </form>
