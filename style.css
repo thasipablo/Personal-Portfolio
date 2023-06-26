@@ -125,6 +125,45 @@ textarea::placeholder {
   color: var(--highlight-color);
 }
 
+/* mobile navigation */
+.mobile-menu-wrapper {
+  background: var(--neutral-color-50);
+  height:100vh;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+}
+
+.mobile-menu {
+  height: 95vh;
+  padding: 12px;
+  background: #fff;
+  border-radius: 0 0 32px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-enable-icon {
+  align-self: end;
+}
+
+.menu-enable-icon img {
+  height:40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.mobile .navbar-link-item {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+
 /* -- end navbar */
 
 /* Hero section */
