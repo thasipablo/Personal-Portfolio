@@ -99,11 +99,11 @@ textarea::placeholder {
   justify-content: end;
 }
 
-.mobile-menu {
+.hamburger-menu-btn {
   padding: 8px;
 }
 
-.mobile-menu img {
+.hamburger-menu-btn img {
   height: 24px;
   width: 24px;
 }
@@ -130,11 +130,11 @@ textarea::placeholder {
   background: var(--neutral-color-50);
   height:100vh;
   position: absolute;
-  z-index: 99;
-  width: 100%;
   top:0;
   left:0;
   right:0;
+  z-index: 99;
+  display: none;
 }
 
 .mobile-menu {
@@ -457,7 +457,7 @@ footer .email {
     margin-bottom: 160px;
   }
 
-  .mobile-menu {
+  .hamburger-menu-btn {
     display: none;
   }
 
