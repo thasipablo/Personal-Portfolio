@@ -20,6 +20,7 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -119,7 +120,7 @@ textarea::placeholder {
   transition: 0.2s ease;
 }
 
-.navbar-link-item:hover {
+.navbar-links.navbar-link-item:hover {
   transform: scale(1.2);
   cursor: pointer;
   color: var(--highlight-color);
