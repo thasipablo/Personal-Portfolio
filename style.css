@@ -134,6 +134,9 @@ textarea::placeholder {
   left: 0;
   right: 0;
   z-index: 99;
+}
+
+.mobile-menu-wrapper.hide {
   display: none;
 }
 
