@@ -1,8 +1,7 @@
 :root {
   --primary-color: #172b4d;
   --secondary-color: #3a4a42;
-  --highlight-color: #36B37E;
-  ;
+  --highlight-color: #36b37e;
   --neutral-color: #dfe1e6;
   --neutral-color-50: #c2c8d1;
   --secondary-color-50: #d0d9d4;
@@ -231,6 +230,11 @@ textarea::placeholder {
   align-items: center;
 }
 
+.project-popup-btn img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
 .banner-scroll-btn button img {
   padding-top: 2px;
 }
@@ -332,7 +336,6 @@ textarea::placeholder {
   right: 0;
   left: 0;
   padding: 1rem;
-  /* background: rgba(193, 199, 208, 1); */
   background: var(--neutral-color);
   overflow-y: auto;
 }
@@ -410,11 +413,6 @@ textarea::placeholder {
   align-items: center;
   gap: 12px;
   border-radius: 4px;
-}
-
-.project-popup-btn img {
-  width: 1.3rem;
-  height: 1.3rem;
 }
 
 /* end work section */
