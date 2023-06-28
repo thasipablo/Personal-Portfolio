@@ -20,9 +20,14 @@ mobileMenuLinks.forEach((link) => {
 // project card details popup
 const popupWindow = document.querySelector('.project-card-popup');
 const popupExitBtn = document.querySelector('.project-card-popup .exit-btn');
+const projectCards = document.querySelectorAll('.work-card');
 
 const togglePopupWindow = () => {
   popupWindow.classList.toggle('hide');
 };
 
 popupExitBtn.addEventListener('click', togglePopupWindow);
+
+projectCards.forEach((card) => {
+  card.addEventListener('click', togglePopupWindow);
+});
