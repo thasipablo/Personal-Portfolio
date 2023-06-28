@@ -290,7 +290,7 @@ textarea::placeholder {
 
 .card-btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card-btn {
