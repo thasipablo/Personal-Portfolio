@@ -1,7 +1,8 @@
 :root {
   --primary-color: #172b4d;
   --secondary-color: #3a4a42;
-  --highlight-color: #2a6b50;
+  --highlight-color: #36B37E;
+  ;
   --neutral-color: #dfe1e6;
   --neutral-color-50: #c2c8d1;
   --secondary-color-50: #d0d9d4;
@@ -337,20 +338,31 @@ textarea::placeholder {
 }
 
 .project-popup-content {
-  position: relative;
   background: #fff;
   padding: 1rem;
   border-radius: 1rem;
   width: 100%;
+  max-width: 872px;
+  margin: 0 auto;
+}
+
+.popup-header {
+  position: relative;
 }
 
 .exit-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 8px;
+  right: 8px;
   width: 40px;
   height: 40px;
+  background: url("images/icon-cancel-mobile.png") no-repeat center;
   z-index: 9999;
+}
+
+.popup-body {
+  margin-top: 12px;
+  position: relative;
 }
 
 .exit-btn .exit-icon {
@@ -383,7 +395,7 @@ textarea::placeholder {
 .project-popup-btns {
   display: flex;
   margin-top: 1rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .project-popup-btn {
@@ -577,6 +589,49 @@ footer .email {
   /* work section */
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-card-popup {
+    background: rgba(193, 199, 208, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+  .exit-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+    background: url("images/icon-cancel-desktop.png") no-repeat center, var(--neutral-color);
+  }
+
+  .project-popup__title {
+    width: 56%;
+  }
+
+  .project-description {
+    line-height: 30px;
+  }
+
+  .popup-body .card-btns {
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+
+  .popup-body .card-btn {
+    background: var(--neutral-color);
+  }
+
+  .project-popup-btns {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: end;
+    gap: 12px;
+  }
+
+  .popup-img {
+    margin-top: 52px;
   }
 
   /* about me section */
