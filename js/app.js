@@ -1,3 +1,20 @@
+//#region add validate form
+
+const emailInput = document.querySelector("#email");
+const formtag = document.querySelector(".form1");
+
+formtag.addEventListener("submit", (event) => {
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+    alert("Email must be lowercase");
+  }
+}
+);
+
+//#endregion
+
+
+
 const projectsList = [
   {
     name: 'Keeping track of hundreds of components',
