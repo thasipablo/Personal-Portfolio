@@ -50,7 +50,7 @@ projectsList.forEach((project) => {
         <li class="card-btn">${project.technologies[2]}</li>
         <li class="card-btn">${project.technologies[3]}</li>
       </ul>
-      <div class="cta-btn"><a href="#">See project</a></d>
+      <button class="cta-btn">See project</button>
     </div>
   `;
   projectContainerTag.appendChild(projectCard);
@@ -60,12 +60,23 @@ const popupWindow = document.querySelector('.project-card-popup');
 const popupExitBtn = document.querySelector('.project-card-popup .exit-btn');
 const projectCards = document.querySelectorAll('.work-card');
 
-const togglePopupWindow = (event) => {
-  popupWindow.classList.toggle('hide');
-  console.log(event.target);
+const populatePopupData = (project) => {
+  console.log(project)
 };
 
-popupExitBtn.addEventListener('click', togglePopupWindow);
+const togglePopupWindow = (event) => {
+  const projectCard = event.target.closest('.work-card');
+  if (projectCard) {
+    const projectName = projectCard.querySelector('.card-title').textContent;
+    const project = projectsList.find((proj) => proj.name === projectName);
+    populatePopupData(project);
+    popupWindow.classList.toggle('hide');
+  }
+};
+
+popupExitBtn.addEventListener('click', () => {
+  popupWindow.classList.toggle('hide');
+});
 
 projectCards.forEach((card) => {
   card.querySelector('.cta-btn').addEventListener('click', togglePopupWindow);
