@@ -270,13 +270,14 @@
           <h1 class="section-title contact-section-title">
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </h1>
-          <form method="POST" action="https://formspree.io/f/xoqzgjwv" class="form1">
+          <form method="POST" action="https://formspree.io/f/xoqzgjwv" class="contact-form">
             <label for="full-name" hidden>Full Name</label>
             <input id="full-name" type="text" placeholder="Full name" name="name" maxlength="30" required>
             <label for="email" hidden>Email</label>
             <input id="email" type="email" placeholder="Email address" name="email" required>
             <label for="message" hidden>Message</label>
             <textarea id="message" cols="30" rows="10" maxlength="500" name="message" placeholder="Hey I’d like to connect to..." required></textarea>
+            <div class="error-msg"></div>
             <button type="submit" class="form-submit-btn">Get in touch</button>
           </form>
         </div>
