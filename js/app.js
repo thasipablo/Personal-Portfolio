@@ -61,7 +61,7 @@ const popupExitBtn = document.querySelector('.project-card-popup .exit-btn');
 const projectCards = document.querySelectorAll('.work-card');
 
 const populatePopupData = (project) => {
-  console.log(project)
+  popupWindow.querySelector('.project-popup__title').innerHTML = project.name;
 };
 
 const togglePopupWindow = (event) => {
