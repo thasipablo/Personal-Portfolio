@@ -15,6 +15,14 @@ const projectsList = [
     linkToLiveVersion: 'https://thasipablo.github.io',
     linkToSource: 'https://github.com/thasipablo/thasipablo.github.io',
   },
+  {
+    name: 'Keeping track of hundreds of components and ...',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    featuredImage: 'https://img.freepik.com/free-photo/technology-particle-dots-5g-digital-corporate-background_53876-102624.jpg',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    linkToLiveVersion: 'https://thasipablo.github.io',
+    linkToSource: 'https://github.com/thasipablo/thasipablo.github.io',
+  },
 ];
 
 // get needed tags for the mobile menu
@@ -62,6 +70,7 @@ const projectCards = document.querySelectorAll('.work-card');
 
 const populatePopupData = (project) => {
   popupWindow.querySelector('.project-popup__title').innerHTML = project.name;
+  popupWindow.querySelector('.project-description').innerHTML = project.description;
 };
 
 const togglePopupWindow = (event) => {
