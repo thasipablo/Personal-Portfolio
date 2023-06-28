@@ -1,4 +1,4 @@
-// get needed tags
+// get needed tags for the mobile menu
 const hamburgerMenuBtn = document.querySelector('.hamburger-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu-wrapper');
 const mobileMenuExit = document.querySelector('.menu-enable-icon');
@@ -16,3 +16,13 @@ mobileMenuExit.addEventListener('click', toggleMobileMenu);
 mobileMenuLinks.forEach((link) => {
   link.addEventListener('click', toggleMobileMenu);
 });
+
+// project card details popup
+const popupWindow = document.querySelector('.project-card-popup');
+const popupExitBtn = document.querySelector('.project-card-popup .exit-btn');
+
+const togglePopupWindow = () => {
+  popupWindow.classList.toggle('hide');
+};
+
+popupExitBtn.addEventListener('click', togglePopupWindow);

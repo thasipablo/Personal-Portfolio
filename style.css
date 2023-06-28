@@ -340,6 +340,10 @@ textarea::placeholder {
   overflow-y: auto;
 }
 
+.project-card-popup.hide {
+  display: none;
+}
+
 .project-popup-content {
   background: #fff;
   padding: 1rem;
