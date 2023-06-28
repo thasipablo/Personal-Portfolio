@@ -60,12 +60,13 @@ const popupWindow = document.querySelector('.project-card-popup');
 const popupExitBtn = document.querySelector('.project-card-popup .exit-btn');
 const projectCards = document.querySelectorAll('.work-card');
 
-const togglePopupWindow = () => {
+const togglePopupWindow = (event) => {
   popupWindow.classList.toggle('hide');
+  console.log(event.target);
 };
 
 popupExitBtn.addEventListener('click', togglePopupWindow);
 
 projectCards.forEach((card) => {
-  card.addEventListener('click', togglePopupWindow);
+  card.querySelector('.cta-btn').addEventListener('click', togglePopupWindow);
 });
