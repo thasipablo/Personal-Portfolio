@@ -526,6 +526,10 @@ textarea::placeholder {
   align-items: center;
 }
 
+.contact-section .error-msg {
+  color: #f56;
+}
+
 .contact-section form textarea {
   text-align: left;
   height: 114px;
