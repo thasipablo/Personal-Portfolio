@@ -187,3 +187,10 @@ message.addEventListener('keyup', (e)=>{
   formData.message = e.target.value;
   updateLocalStorage();
 })
+// fill the form whem the page loads
+const localStorageData = JSON.parse(localStorage.getItem('formData'));
+if(localStorageData) {
+  fullName.value = localStorageData.fullName;
+  emailInput.value = localStorageData.email;
+  message.value = localStorageData.message;
+}
