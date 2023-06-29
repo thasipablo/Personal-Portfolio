@@ -68,6 +68,38 @@ mobileMenuLinks.forEach((link) => {
 
 // project card details popup
 const projectContainerTag = document.querySelector('.cards-container');
+const popupWindow = document.querySelector('.project-card-popup');
+const popupWindowContent = document.createElement('article');
+popupWindowContent.classList.add('project-popup-content');
+popupWindowContent.innerHTML = `
+  <div class="popup-header">
+    <button class="exit-btn">
+    </button>
+    <img src="" alt="project card image" class="popup-img">
+    </div>
+    <div class="popup-body">
+    <h3 class="project-popup__title">Keeping track of hundreds of
+      components</h3>
+    <ul class="card-btns">
+      <li class="card-btn">Ruby on Rails</li>
+      <li class="card-btn">CSS</li>
+      <li class="card-btn">Javascript</li>
+      <li class="card-btn">HTML</li>
+    </ul>
+    <div class="project-description"></div>
+    <div class="project-popup-btns">
+      <div class="project-popup-btn">
+        <a href="#">See live</a>
+        <img src="images/icon-export.png" alt="export icon">
+      </div>
+      <div class="project-popup-btn">
+        <a href="#">See source</a>
+        <img src="images/icon-github.png" alt="github icon">
+      </div>
+    </div>
+  </div>
+`
+popupWindow.appendChild(popupWindowContent);
 
 projectsList.forEach((project) => {
   const projectCard = document.createElement('article');
@@ -88,7 +120,6 @@ projectsList.forEach((project) => {
   projectContainerTag.appendChild(projectCard);
 });
 
-const popupWindow = document.querySelector('.project-card-popup');
 const popupExitBtn = document.querySelector('.project-card-popup .exit-btn');
 const projectCards = document.querySelectorAll('.work-card');
 
