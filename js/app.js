@@ -98,7 +98,7 @@ popupWindowContent.innerHTML = `
       </div>
     </div>
   </div>
-`
+`;
 popupWindow.appendChild(popupWindowContent);
 
 projectsList.forEach((project) => {
