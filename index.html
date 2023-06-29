@@ -11,22 +11,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/app.js" defer ></script>
     <title>Personal Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <!-- navigation -->
       <nav class="navbar">
         <div class="navbar-container">
-          <button class="mobile-menu">
+          <button class="hamburger-menu-btn">
             <img src="images/icon_menu.svg" alt="mobile menu icon" />
           </button>
 
           <ul class="navbar-links">
-            <li class="navbar-link-item">Portfolio</li>
-            <li class="navbar-link-item">About</li>
-            <li class="navbar-link-item">Contact</li>
+            <li class="navbar-link-item"><a href="#home">Portfolio</a></li>
+            <li class="navbar-link-item"><a href="#about">About</a></li>
+            <li class="navbar-link-item"><a href="#contact">Contact</a></li>
           </ul>
+        </div>
+        <div class="mobile-menu-wrapper hide">
+          <div class="mobile-menu" >
+            <button class="menu-enable-icon">
+              <img src="images/menu_enabled_icon.png" alt="enabled menu icon">
+            </button>
+            <ul class="mobile">
+              <li class="navbar-link-item"><a href="#home">Portfolio</a></li>
+              <li class="navbar-link-item"><a href="#about">About</a></li>
+              <li class="navbar-link-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -81,9 +94,10 @@
 
     <main>
       <!-- Work section -->
-      <section id="works" class="section-container">
+      <section id="works" class="section-container works-section">
         <h2 class="works-section-title section-title">My Recent Works</h2>
         <div class="cards-container">
+          <!--
           <article class="work-card">
             <div class="work-card__head"></div>
             <div class="work-card__body">
@@ -159,14 +173,48 @@
                 <li class="card-btn">Javascript</li>
                 <li class="card-btn">HTML</li>
               </ul>
-              <div class="cta-btn"><a href="#">See project</a></d>
+              <div class="cta-btn"><a href="#">See project</a></div>
+            </div>
+          </article>
+        -->
+        </div>
+        <div class="project-card-popup hide">
+          <article class="project-popup-content">
+            <div class="popup-header">
+              <button class="exit-btn">
+              </button>
+              <img src="https://img.freepik.com/free-photo/technology-particle-dots-5g-digital-corporate-background_53876-102624.jpg" alt="project card image" class="popup-img">
+            </div>
+            <div class="popup-body">
+              <h3 class="project-popup__title">Keeping track of hundreds of
+                components</h3>
+              <ul class="card-btns">
+                <li class="card-btn">Ruby on Rails</li>
+                <li class="card-btn">CSS</li>
+                <li class="card-btn">Javascript</li>
+                <li class="card-btn">HTML</li>
+              </ul>
+              <div class="project-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+              </div>
+              <div class="project-popup-btns">
+                <div class="project-popup-btn">
+                  <a href="#">See live</a>
+                  <img src="images/icon-export.png" alt="export icon">
+                </div>
+                <div class="project-popup-btn">
+                  <a href="#">See source</a>
+                  <img src="images/icon-github.png" alt="github icon">
+                </div>
+              </div>
             </div>
           </article>
         </div>
       </section>
   
       <!-- About me -->
-      <section>
+      <section id="about">
         <section id="about-me" class="about-me-header">
           <div class="about-me-header-container section-container">
             <h2 class="section-title about-me-title">About me</h2>
@@ -222,13 +270,14 @@
           <h1 class="section-title contact-section-title">
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </h1>
-          <form method="POST" action="https://formspree.io/f/xoqzgjwv">
+          <form method="POST" action="https://formspree.io/f/xoqzgjwv" class="contact-form">
             <label for="full-name" hidden>Full Name</label>
             <input id="full-name" type="text" placeholder="Full name" name="name" maxlength="30" required>
             <label for="email" hidden>Email</label>
             <input id="email" type="email" placeholder="Email address" name="email" required>
             <label for="message" hidden>Message</label>
             <textarea id="message" cols="30" rows="10" maxlength="500" name="message" placeholder="Hey I’d like to connect to..." required></textarea>
+            <div class="error-msg"></div>
             <button type="submit" class="form-submit-btn">Get in touch</button>
           </form>
         </div>
