@@ -165,32 +165,34 @@ formTag.addEventListener('submit', (event) => {
 const fullName = document.querySelector('#full-name');
 const message = document.querySelector('#message');
 
-const formData = {
+let formData = {
   fullName: '',
   email: '',
-  message: ''
+  message: '',
+};
+
+// fill the form whem the page loads
+const localStorageData = JSON.parse(localStorage.getItem('formData'));
+if (localStorageData) {
+  formData = { ...localStorageData };
+  fullName.value = formData.fullName;
+  emailInput.value = formData.email;
+  message.value = formData.message;
 }
 
 const updateLocalStorage = () => {
   localStorage.setItem('formData', JSON.stringify(formData));
-}
+};
 
-fullName.addEventListener('keyup', (e)=>{
+fullName.addEventListener('keyup', (e) => {
   formData.fullName = e.target.value;
   updateLocalStorage();
-})
-emailInput.addEventListener('keyup', (e)=>{
+});
+emailInput.addEventListener('keyup', (e) => {
   formData.email = e.target.value;
   updateLocalStorage();
-})
-message.addEventListener('keyup', (e)=>{
+});
+message.addEventListener('keyup', (e) => {
   formData.message = e.target.value;
   updateLocalStorage();
-})
-// fill the form whem the page loads
-const localStorageData = JSON.parse(localStorage.getItem('formData'));
-if(localStorageData) {
-  fullName.value = localStorageData.fullName;
-  emailInput.value = localStorageData.email;
-  message.value = localStorageData.message;
-}
+});
