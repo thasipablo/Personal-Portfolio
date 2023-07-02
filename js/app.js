@@ -160,3 +160,39 @@ formTag.addEventListener('submit', (event) => {
     errorMsg.innerHTML = 'Email must be lowercase';
   }
 });
+
+// preserve data locally
+const fullName = document.querySelector('#full-name');
+const message = document.querySelector('#message');
+
+let formData = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+// fill the form whem the page loads
+const localStorageData = JSON.parse(localStorage.getItem('formData'));
+if (localStorageData) {
+  formData = { ...localStorageData };
+  fullName.value = formData.fullName;
+  emailInput.value = formData.email;
+  message.value = formData.message;
+}
+
+const updateLocalStorage = () => {
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+fullName.addEventListener('keyup', (e) => {
+  formData.fullName = e.target.value;
+  updateLocalStorage();
+});
+emailInput.addEventListener('keyup', (e) => {
+  formData.email = e.target.value;
+  updateLocalStorage();
+});
+message.addEventListener('keyup', (e) => {
+  formData.message = e.target.value;
+  updateLocalStorage();
+});
